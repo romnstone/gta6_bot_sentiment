@@ -4,7 +4,8 @@ This project builds an end-to-end pipeline to (1) scrape Reddit threads about GT
 
 ## Highlights
 - **Scraping**: Pulls user/timestamp/content from multiple GTA6 threads and appends to Excel for downstream analysis. (See `src/webscraping_content.py`.)  
-- **Bot detection**: Uses Isolation Forest, One-Class SVM, and DBSCAN with majority vote at both user and comment levels.  
+- **Bot detection**: Uses Isolation Forest, One-Class SVM, and DBSCAN with majority vote at both user and comment levels.
+- **My role (exclusive):** I designed, implemented, and evaluated this bot detection module.
 - **Sentiment model**: Tokenization + pre-trained **GloVe** embeddings + BiLSTM, hyperparameter sweep over 60 configs; saves the **best** model and labels unlabeled comments. (See `src/sentiment_RNN_final.py`.)
 
 ## Repo Structure
